@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fb;
+    color:#222;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+
+
+
+
+.Contenedor{
+
+    width:100%;
+    overflow:hidden;
+}
+
+
+
+
+
+header{
+
+    width:100%;
+    background:linear-gradient(135deg,#4F46E5,#06B6D4);
+    padding:20px 8%;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.Contenido-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.Logo h1{
+
+    color:white;
+    font-size:32px;
+    font-weight:700;
+}
+
+.Contenido-main{
+
+    width:90%;
+    margin:50px auto;
+}
+
+.BannerPrincipal{
+
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+    transition:.4s;
+}
+
+.BannerPrincipal:hover{
+
+    transform:scale(1.02);
+}
+
+
+
+
+
+.contenido{
+
+    width:90%;
+    margin:60px auto;
+
+    display:grid;
+    grid-template-columns:3fr 1fr;
+    gap:35px;
+}
+
+
+
+
+article{
+
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+article:hover{
+
+    transform:translateY(-8px);
+}
+
+.banner-articulo{
+
+    width:100%;
+}
+
+
+
+
+
+aside{
+
+    background:white;
+    padding:15px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+.Publicidad{
+
+    border-radius:15px;
+}
+
+
+
+
+footer{
+
+    margin-top:60px;
+}
+
+.FooterImagen{
+
+    width:100%;
+}
+
+
+
+@media(max-width:900px){
+
+.Contenido-header{
+
+    flex-direction:column;
+    gap:20px;
+}
+
+.Menu ul{
+
+    flex-direction:column;
+    text-align:center;
+}
+
+.contenido{
+
+    grid-template-columns:1fr;
+}
+
+}
